@@ -1,0 +1,82 @@
+page-signup {
+    ion-content{ 
+        background-image: url(../assets/images/bgmain.png);
+        background-size: 100% 100%;
+
+
+        .profile_pics{
+            text-align: center;
+            width:100%;
+            float:left;
+        }
+        .profile_pics .prof_pic{
+            width: 30%;
+            margin: 0 auto;
+            margin-top: 33px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .profile_fields{
+            text-align: center;
+            width: 80%;
+            float: none;
+            margin: auto;
+            .prof_input  {   width: 100%;
+                             background: #fff;
+                             border: 1px solid #000;
+                             margin-bottom: 10px;
+                             padding: 6px 15px;
+                             color: #000;
+                             border-radius: 4px;
+                             height: 32px;
+                             .text-input-md,.text-input-ios {
+                                 margin: 0;
+                                 padding: 0;
+                                 width: auto;
+                                 float: left;
+                             }
+
+            }
+            .sign_in_btn{
+                clear: left;
+                width: 34%;
+                padding: 10px 15px;
+                margin-top: 16px;
+                border-radius: 8px;
+                background: #ed1c24;
+                color: #fff;
+                font-size: 15px;
+                box-shadow: 0px 1px 7px #443131;
+            }
+        }
+
+    }
+}
+@media (min-device-width:767px) {
+    page-signup {
+        ion-content  .profile_fields .prof_input {
+            width: 80%;
+            background: #fff;
+            border: 1px solid #000;
+            margin-bottom: 10px;
+            padding: 6px 15px;
+            color: #000;
+            border-radius: 4px;
+            height: 55px;
+            font-size: 19px;
+        }
+        ion-content  .profile_fields .sign_in_btn {
+            clear: left;
+            width: 34%;
+            padding: 17px 16px;
+            margin-top: 16px;
+            border-radius: 8px;
+            background: #ed1c24;
+            color: #fff;
+            font-size: 27px;
+            box-shadow: 0px 1px 7px #443131;
+        }
+
+    }
+
+}

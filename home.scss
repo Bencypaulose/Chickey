@@ -1,0 +1,100 @@
+page-home {
+    .scroll-content{
+        overflow: hidden;   
+    }
+    .right_block{
+        /*overflow-y: auto;*/
+        height: 100%;
+        ion-scroll {
+            width: 100%; 
+            height: 100vh;
+        }
+    }
+    .fetured_product_list.list-md ,.fetured_product_list.list-ios{
+        margin: 0;
+        margin-bottom: 89px;
+
+    } 
+
+    .item_overlay{
+        background: rgba(0,0,0,.33);
+        position: absolute;
+        bottom: 1px;
+        left:0;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+        .pdt_info{
+            background: #dedcdd;
+            border: none;
+            padding: 15px 17px;
+            left: 0px;
+            margin-right: 0;
+        }
+        .pdt_info:hover {
+            background: #dedcdd;}
+        .odr_price:hover {
+            background: #dedcdd;}
+        .odr_price{
+            background: #dedcdd;
+            border: none;
+            padding: 15px 16px;
+            right: 0px;
+            margin-left: 0;
+            color: #000;
+        }
+
+        .odr_nw.item-button{
+            background: #ed1c24;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            margin-right: 6px;
+            margin-left: 6px;
+        }
+    }
+
+}
+.pop_info{
+    text-align: center;
+}
+.popover-content{
+    overflow: unset;
+
+}
+.fetured_product_item .input-wrapper>ion-label {
+    display: contents;
+}
+.item_overlay button{
+    margin-bottom: 0;
+}
+.fetured_product_item  img{
+    display: block;
+}
+.popover-viewport{
+background-image: url("../assets/images/ch.png");
+background-size: 100% 100%;
+border-bottom: 4px solid #a22a28;
+background-repeat: no-repeat;
+}
+.pdt_info_btn{  
+    right: -4px;
+    position: absolute;
+    top: -14px;
+    border-radius: 50px;
+    padding: 0;
+    width: 25px;
+    background: #1e252d;
+    height: 25px;
+}
+.pdt_info_btn ion-icon{
+    color: #fff;
+}
+.p_hd{
+    font-size: 15px;
+    color: #1e252d;
+    font-weight: 900;
+}
+.pdesc{
+    font-size: 13px;
+}

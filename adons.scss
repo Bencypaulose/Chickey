@@ -1,0 +1,151 @@
+page-adons.ion-page{
+    background: url(../assets/images/order_pl_last.jpg) 100% 100%;
+    ion-content {
+        background: transparent;
+        .item{
+            background: transparent;
+            padding-left: 0;
+            .item-inner{
+                padding-left: 8px;
+                border-bottom: 2px solid rgba(255,255,255,.19);
+            }
+        }
+        .item:last-child {
+            .item-inner{
+                border-bottom: 2px solid rgba(255,255,255,.19);
+            }
+        }
+        .col{
+            color: #fff;
+            .adon_info{
+                font-size: 12px;
+                color: #ffea00;
+            }
+            .add_cart_amount{
+                padding: 0;
+                list-style: none;
+                margin: 0;
+                margin-top: 18%;
+                li{
+                    float: left;
+                    width: 32%;
+                    button{
+                        background: transparent;
+                        padding: 0;
+                    }
+                }
+                li.countspc{
+                    width: 36%;
+                    span{
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .adon_img{
+                width: 100%;
+                height: auto;
+                padding-bottom: 10px;
+
+            }
+        }
+        .col.adon_details{
+            h3{
+                margin-bottom: 8px;
+            }
+            h4.adon_price{
+                margin-bottom: 5px;
+            }
+        }
+        .col.img_wrap{
+            background: url(../assets/images/adon_shadow.png) no-repeat center bottom;
+            background-size: 100%;
+        }
+        .grid { 
+            ion-row{ 
+                .col.adon_details{
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+    ion-footer{
+        .toolbar{
+            .text-ios-primary {
+                color: #fff;
+            }
+            min-height: 50px;
+            text-align:center;
+            .toolbar-background{
+                background: url('../assets/images/adon_pop_foot.png') no-repeat center bottom;
+                background-size: 100%; 
+            }
+            .bar-buttons{
+                width: 100%;
+            }
+            .bottom_addon{
+                background: #ed1c24;
+                width: 100px;
+                border-radius: 20px;
+                .text-md-primary {
+                    color: #fff;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    ion-header{
+        .toolbar{
+            min-height: 50px;
+            /*text-align:center;*/
+            .toolbar-background{
+                background: url('../assets/images/adon_pop_head.png') no-repeat center bottom;
+                background-size: 100%; 
+            }
+            .price_head small{
+                // background: url('../assets/images/adon_sr_bg.png');      
+                background: #ed1c24;
+                padding: 1px 7px;margin-left: 3px;
+                border-radius: 10px;margin-right: 3px;
+            }
+
+            .price_head{
+                float: right;
+                color: #fff;
+                padding-top: 3px;
+                padding-right: 9px;
+            }
+            .toolbar-title{
+                color: #000;
+                font-weight: 400;
+
+            }
+        }
+    }
+}
+@media (min-device-width:767px) {
+    page-adons.ion-page{
+        ion-header .toolbar .price_head {
+            font-size: 20px;
+        }
+        ion-content .col .adon_info {
+            font-size: 15px;
+            color: #ffea00;
+            padding-top: 13px;
+        }
+        ion-content .col.adon_details h3,ion-content .col.adon_details h4.adon_price  {
+            font-size: 18px;
+        }
+ion-footer .toolbar .bottom_addon {
+    width: 120px;
+    height: 47px;
+    font-size: 18px;
+}
+ion-footer .toolbar {
+    min-height: 72px;
+}
+    }
+}
